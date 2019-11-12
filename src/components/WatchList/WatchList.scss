@@ -1,0 +1,15 @@
+.watch-list {
+  margin: 50px;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+  }
+
+  ul {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

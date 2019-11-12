@@ -1,0 +1,75 @@
+.movie-info {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 483px;
+  height: 288px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    width: inherit;
+    height: inherit;
+  }
+  &__image {
+    width: 185px;
+    height: 288px;
+  }
+  &__description {
+    padding: 10px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  &__average {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    span {
+      color: #333;
+    }
+  }
+  &__genre {
+    display: inline-block;
+    background: pink;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 10px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+  }
+  &__date {
+    display: inline-block;
+    margin: 6px 0;
+    font-size: 14px;
+    color: gray;
+  }
+  &__overview {
+    display:-webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient:vertical;
+    line-height: 17px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .btn {
+    border: none;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+  }
+  &__addBtn {
+    background: lightblue;
+  }
+  &__removeBtn {
+    background: lightcoral;
+  }
+}
