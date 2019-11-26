@@ -14,7 +14,7 @@ interface Props {
 
 function MovieInfo({ movie, onAdd, onRemove, type }: Props) {
   const { title, poster, releaseDate, voteAverage, overview, id, genres } = movie;
-  // console.log(title)
+  console.log(genres)
   return (
     <li className="movie-info">
       <div className="movie-info__inner">
@@ -25,7 +25,7 @@ function MovieInfo({ movie, onAdd, onRemove, type }: Props) {
           <h3 className="movie-info__title">{title}<label className="movie-info__average">{voteAverage} <span>점</span></label></h3>
           <div className="movie-info__genres">
             {
-              genres.map((genre: string, idx: number) => <span key={idx} className="movie-info__genre">{genre}</span>)
+              genres.map((genre: number, idx: number) => <span key={idx} className="movie-info__genre">{genre}</span>)
             }
           </div>
           <span className="movie-info__date">{releaseDate}</span>

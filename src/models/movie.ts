@@ -4,7 +4,7 @@ export interface MovieItem {
   voteAverage: number;
   overview: string;
   releaseDate: string;
-  genres: number[] | string[] | any;
+  genres: number[];
   poster: string | null;
 }
 
